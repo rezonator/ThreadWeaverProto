@@ -17,4 +17,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	//We dont need to load it on start , its lazy
+	UPROPERTY(EditAnywhere, Category="Combat")
+	TObjectPtr<USkeletalMeshComponent> Weapon;
 };
